@@ -7,10 +7,10 @@
    <body>
       <!-- Write your HTML in this file! -->
       <header>
-      <div class="centered" id="intro">
-         <h1 style="color: orangered;">Stillwater Oklahoma</h1>
-         <h2>A small college town</h2>
-         <p style="font-family: papyrus;">America's Friendliest College Town with many pleasures and treasures.</p>
+      <div class="centered" id="mainHeading">
+         <h1>Stillwater Oklahoma</h1>
+         <h2 style="color: black;">A small college town</h2>
+         <h4 style="font-family: papyrus; color:black;">America's Friendliest College Town with many pleasures and treasures!</h4>
       </div>
       </header>
       <main>
@@ -18,10 +18,10 @@
          <section>
          <div class="buttons">
             <h2>Points of Interest</h2>
-            <button id="osu">Oklahoma State University</button>
-            <button id="garden">Botanical Garden</button>
-            <button id="wrestlinghall">Wrestling Hall of Fame</button>
-            <button id="boomer">Boomer Lake Park</button> <br> <br>
+            <button id="osu" onclick="document.getElementById('oklahoma').scrollIntoView();">Oklahoma State University</button>
+            <button id="garden" onclick="document.getElementById('botanicalGarden').scrollIntoView();">Botanical Garden</button>
+            <button id="wrestlinghall" onclick="document.getElementById('hallofFame').scrollIntoView();">Wrestling Hall of Fame</button>
+            <button id="boomer" onclick="document.getElementById('boomerLake').scrollIntoView();">Boomer Lake Park</button> <br> <br>
          </div>
             <div id = "stillwatermap"> <br> <br>
             <figure>
@@ -34,15 +34,62 @@
             <img src = "C:\Users\annet\Documents\Courses\LaunchCode\js-assignment-4-html-me-something-annettesharon\Images\DOWNTOWN-STILLWATER.jpg" width="580" height="320"/>
          </figure>
          </div>
-         
-        <div class="oklahoma"> 
+      <section>
+        <div id="oklahoma"> 
          <h2 style="margin-block-start: 15em; color: orangered;"><strong>Oklahoma State University</strong></h2>
-         <p><span>From being named a top public university to being known as America's Healthiest Campus, OSU's awards and rankings showcase our academic distinctions, campus culture and value. As of 2021, Oklahoma State students and alumni have won 34 Olympic medals (21 gold, 5 silver, and 8 bronze). OSU has the nation's largest student union, which has continued to serve students, alumni, and the Stillwater community for over 65 years. Offering expansive dining and retail options as well as meeting and event space, it is the heart of the OSU Campus. It was built without a single cent from the taxpayers. </span></p>
+         <p><span>From being named a top public university to being known as America's Healthiest Campus, OSU's awards and rankings showcase our academic distinctions, campus culture and value. As of 2021, Oklahoma State students and alumni have won 34 Olympic medals (21 gold, 5 silver, and 8 bronze). Notable buildings at OSU include Old Central, OSU's first permanent academic building; the Boone Pickens Stadium; the Gallagher-Iba Arena; and the Student Union. Located within the Gallagher-Iba Arena is OSU's Heritage Hall, a museum displaying the history of Oklahoma State University Athletics. Guests are welcome to browse the many displays of memorabilia from the college's beginning in 1890 to today. Items include trophies, athletic uniforms, ticket stubs, photos and more.</span></p>
+         <p id="studentunion">OSU has the nation's largest student union, which has continued to serve students, alumni, and the Stillwater community for over 65 years. It offers expansive dining and retail options as well as meeting and event space, it is the heart of the OSU Campus. It was built without a single cent from the taxpayers.</p>
+         <figure>
+            <img src = "C:\Users\annet\Documents\Courses\LaunchCode\js-assignment-4-html-me-something-annettesharon\Images\OSU-Campus.jpg" width="580" height="320" class="center"/>
+         </figure>
+         <p style="text-align:center">
+         <a href="https://go.okstate.edu/">For more information about OSU, click here!</a>
+      </p>
         </div>
+      </section>  
+      <section>
+         <div id="botanicalGarden"> 
+          <h2 style="color: orangered;"><strong>Botanical Garden</strong></h2>
+          <p><span>The road to discovery, exploration and learning runs between two oak groves into The Botanic Garden at Oklahoma State University. Everything within the 100-acre plot - from its walking trails to its native plants - is meant to nurture research, promote discovery and inspire new ideas. The Botanic Garden is a living, multidisciplinary laboratory currently used by several departments within Oklahoma State's Division of Agricultural Science and Natural Resources in addition to the local and regional communities at large. Practices and projects include drought response; water quality; sustainable practices and energy; and reptile and amphibian studies.</span></p>
+          <figure>
+            <img src = "C:\Users\annet\Documents\Courses\LaunchCode\js-assignment-4-html-me-something-annettesharon\Images\botanical garden.jpg" width="580" height="320" class="center"/>
+         </figure>
+         <p style="text-align:center">
+            <a href="https://botanicgarden.okstate.edu/">For more information about the Botanical Garden, visit their website!</a>
+         </p>
+         </div>
+       </section>
+       <section>
+         <div id="hallofFame"> 
+          <h2 style="color: orangered;"><strong>Wrestling Hall of Fame</strong></h2>
+          <p><span>The John T. Vaughan Hall of Honors is where the greatest names in wrestling are recognized, including the iconic granite plaques presented annually to Distinguished Members since the Hall of Fame opened in 1976. It also features one of the largest collections of wrestling memorabilia in the world, including Olympic and World Championship gold medals and portraits of every United States wrestling gold medalist. Wrestling truly is for everyone and the diversity and accessibility of the sport continues to be highlighted through exhibits featuring females, African Americans, Native Americans and Latino Americans. The William S. Hein Library has the vast collection of wrestling books from around the world. The library also features historical documents, NCAA guides and results, and bound copies of Amateur Wrestling News dating back to 1956.</span></p>
+          <figure>
+            <img src = "C:\Users\annet\Documents\Courses\LaunchCode\js-assignment-4-html-me-something-annettesharon\Images\National Wrestling.jpg" width="580" height="320" class="center"/>
+         </figure>
+         <p style="text-align:center">
+            <a href="https://nwhof.org/">For more information about the Hall of Fame, visit their website!</a>
+         </p>
+      </div>
+       </section>
+       <section>
+         <div id="boomerLake"> 
+          <h2 style="color: orangered;"><strong>Boomer Lake Park</strong></h2>
+          <p><span>Boomer Lake has a favored status with locals and visitors alike. After undergoing a major overhaul by the city and state, the lake is now an award-winning recreational area. It offers the David Lewis Payne Memorial Monument, walking trails, tennis, Frisbee golf, boat and dock fishing, picnic tables, pavilions and grills. Migrating pelicans, coots and scissortail flycatchers can all be seen on the walk - as well as plenty of Canada Geese.</span></p>
+          <figure>
+            <img src = "C:\Users\annet\Documents\Courses\LaunchCode\js-assignment-4-html-me-something-annettesharon\Images\boomer lake.jpg" width="580" height="320" class="center"/>
+         </figure>
+         <p style="text-align:center">
+            <a href="https://www.travelok.com/listings/view.profile/id.685">For more information about the boomer lake, click here!</a>
+         </p>
+         </div>
+         <div id="testP" class="funParagraph">
+            <p style="text-align: center;">Stillwater, Oklahoma is a place where smiles from strangers are abounding and hometown hospitality is a way of life. Their welcoming spirit is rooted in their Oklahoma history, the diversity forged by Oklahoma State University, and even community hardships that have spurred their strength and camaraderie. </p>
+         </div>
+       </section>
       </article>
       </main>
         <footer>
-			<p>&copy; 2022 Annette Sharon  &reg; Launch Code</p>
+			<p>&copy; 2022 Annette Sharon        &reg; Launch Code</p>
 		</footer>
    </body>
 </html>
